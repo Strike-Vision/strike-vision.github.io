@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker - Graph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html" class="btn">Graph</a>
+            <a href="add_data.html" class="btn">Add Data</a>
+        </div>
+        <div class="content">
+            <h1>Stock Price Graph</h1>
+            <label>Currency: <span id="currency">USD</span></label>
+            <button id="toggleCurrency" class="btn">Switch to AUD</button>
+            <label>Select Stock:</label>
+            <select id="ticker">
+                <option value="NVDA">NVDA</option>
+                <option value="AAPL">AAPL</option>
+                <option value="TSLA">TSLA</option>
+            </select>
+            <label>Select Time Frame:</label>
+            <select id="timeFrame">
+                <option value="1 Hour">1 Hour</option>
+                <option value="1 Day">1 Day</option>
+                <option value="1 Month">1 Month</option>
+                <option value="1 Year">1 Year</option>
+                <option value="5 Years">5 Years</option>
+            </select>
+            <canvas id="stockChart"></canvas>
+            <p>Current Price: <span id="currentPrice">N/A</span></p>
+            <p>Predicted Next Price: <span id="predictedPrice">N/A</span></p>
+            <p>AI Signal: <span id="signal">N/A</span></p>
+        </div>
+    </div>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

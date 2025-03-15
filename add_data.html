@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker - Add Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html" class="btn">Graph</a>
+            <a href="add_data.html" class="btn">Add Data</a>
+        </div>
+        <div class="content">
+            <h1>Add Transaction</h1>
+            <form id="transactionForm">
+                <label>Stock Ticker:</label>
+                <select name="ticker" required>
+                    <option value="NVDA">NVDA</option>
+                    <option value="AAPL">AAPL</option>
+                    <option value="TSLA">TSLA</option>
+                </select>
+                <label>Date (DD/MM/YYYY):</label>
+                <input type="text" name="date" required placeholder="e.g., 14/03/2025">
+                <label>Time (HH:MM):</label>
+                <input type="text" name="time" required placeholder="e.g., 17:45">
+                <label>Amount (+ for deposit, - for withdrawal):</label>
+                <input type="number" name="amount" step="any" required>
+                <button type="submit" class="btn">Add Transaction</button>
+            </form>
+            <h2>Transaction Log</h2>
+            <textarea id="log" readonly rows="10" cols="70"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
