@@ -1,0 +1,112 @@
+/* Base Styles */
+body {
+    background: #000435;
+    color: #f0f4ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background: #01054a;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #7ecfff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffb347;
+}
+
+/* Section Styles */
+section {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: rgba(10, 20, 70, 0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #7ecfff;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+/* Link Styles */
+a {
+    color: #7ecfff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ffb347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #01054a;
+    color: #b0b8d1;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    border-top: 1px solid #22285a;
+}
+
+/* Project Boxes */
+.project-box {
+    background: #101a4a;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.15s;
+}
+
+.project-box:hover {
+    transform: translateY(-4px) scale(1.02);
+}
+
+.project-box h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.project-box a {
+    color: #7ecfff;
+    text-decoration: none;
+}
+
+.project-box a:hover {
+    color: #ffb347;
+    text-decoration: underline;
+}
